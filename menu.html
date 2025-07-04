@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>OUR MENU</title>
+  <link rel="icon" type="image/png" href="img/icon.png">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <script src="js/bgm.js"></script>
+
+	<style>
+		body{
+			background-color:FloralWhite;
+               text-align:center;
+
+		}
+
+          table, tr, th, td
+          {
+               border: 2px solid Khaki;
+               border-collapse: collapse;
+          }
+
+          th, td
+          {
+               padding: 35px;
+          }
+
+          th 
+          {
+               background-color:DarkOliveGreen;
+               color:Chocolate;
+               text-align:center;
+               font-size:35px;
+               font-family: Lucida Handwriting;
+          }
+
+          tr:nth-child(odd)
+          {
+               background-color:grey;
+               color:Gold;
+               font-size:35px;
+          }
+
+          tr:nth-child(even)
+          {
+               background-color:MediumAquaMarine;
+               color:GreenYellow;
+               font-size:35px;
+          }
+
+          td
+          {
+               text-align:center;
+          }
+
+          tr:hover
+          {
+               background-color:Maroon;
+          }
+
+          #splash-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: black;
+            z-index: 9999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+          }
+
+          #splash-video {
+            width: 70%;
+            height: 70%;
+          }
+
+          #click-music-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 28px;
+            font-family: Arial, sans-serif;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 12px 24px;
+            border-radius: 10px;
+            cursor: pointer;
+            z-index: 2;
+          }
+
+	</style>
+		
+</head>
+
+<body>
+
+<audio id="bgm" src="audio/food.mp3" loop></audio>
+  
+<div class="wrapper">
+  
+ <div class="title-clock-container">
+  <h1 class="title">SIP & RELAX CAFE</h1>
+</div>
+
+
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav><br>
+
+</div>
+
+<div id="splash-screen">
+  <video id="splash-video" autoplay muted playsinline>
+    <source src="video/foodmenu.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+   <div id="click-music-text" onclick="playMusic()">Click for Music</div>
+</div>
+
+<div id="main-content" style="display:none;">
+	
+<div class="menu-header">
+  <h1 class="menu-title">OUR <span class="highlight">MENU</span></h1>
+  <iframe class="menu-clock" src="https://free.timeanddate.com/clock/i9x16zsc/n122/szw210/szh210/hoc00f/hbw0/hfc000/cf100/hgr0/facf90/mqcfff/mql6/mqw2/mqd74/mhcfff/mhl6/mhw1/mhd74/mmcf90/mml4/mmw1/mmd74/hhcfff/hmcfff" frameborder="0" width="210" height="210"></iframe>
+</div>
+
+<div class="menu-section">
+  <img src="img/drinks.jpg" alt="Drinks">
+  <div class="menu-text">
+    <h2>🥤 DRINKS</h2>
+    <p>Coffee (RM4.20)<br>Tea (RM2.50)<br>Orange Juice (RM5.10)</p>
+  </div>
+</div>
+
+<div class="menu-section">
+  <img src="img/dessert.jpg" alt="Desserts">
+  <div class="menu-text">
+    <h2>🍰 DESSERTS</h2>
+    <p>Cake (RM8.59)<br>Ice Cream (RM6.39)<br>Cheesecake (RM9.49)</p>
+  </div>
+</div>
+
+<div class="menu-section">
+  <img src="img/lightmeals.jpg" alt="Light Meals">
+  <div class="menu-text">
+    <h2>🥪 LIGHT MEALS</h2>
+    <p>Sandwich (RM7.00)<br>Salad (RM5.00)<br>Fries (RM6.00)</p>
+  </div>
+</div>
+
+<div class="menu-section">
+  <img src="img/breakfast.jpg" alt="Breakfast">
+  <div class="menu-text">
+    <h2>🍳 BREAKFAST SPECIAL</h2>
+    <p>Pancakes (RM8.90)<br>Omelette (RM11.99)<br>Full Breakfast <del>(RM24.20)</del> (RM18.99)</p>
+  </div>
+</div>
+
+<div class="menu-section">
+  <img src="img/main_dishes.jpg" alt="Main Dishes">
+  <div class="menu-text">
+    <h2>🍽️ MAIN DISHES</h2>
+    <p>Pasta (RM20.00)<br>Chicken Chop (RM22.20)<br>Grilled Fish with Mashed Potatoes (RM24.89)</p>
+  </div>
+</div>
+
+<div class="menu-section">
+  <img src="img/korean_dishes.jpg" alt="Japanese & Korean Dishes">
+  <div class="menu-text">
+    <h2>🍱 JAPANESE & KOREAN DISHES</h2>
+    <p>Teriyaki Chicken Don (RM26.29)<br>Kimchi Fried Rice (RM18.79)<br>Korean Fried Chicken (RM21.29)</p>
+  </div>
+</div>
+
+
+<h1 style="
+  text-align: center;
+  font-size: 60px;
+  font-family: 'Lucida Calligraphy', cursive;
+  color: white;
+  background: linear-gradient(to right, #8B4513, #DEB887);
+  border: 6px double white;
+  padding: 30px;
+  margin-top: 50px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  text-shadow: 2px 2px 5px #000;
+  border-radius: 15px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+">
+  🍱 OUR PRESENTATION - JAPANESE DISHES 🍣
+</h1>
+
+<div style="text-align: center; margin: 40px 0;">
+  <video height="500" width="800" controls style="
+    border: 8px solid #A0522D;
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+  ">
+    <source src="video/food_satu.mp4" type="video/mp4">
+    Your browser does not support the video element.
+  </video>
+</div>
+
+<div class="menu-container">
+
+<h1 style="
+  text-align:center;
+  font-size:50px;
+  font-family:Courier New;
+  color:DarkSlateGrey;
+  background-color:BurlyWood;
+  border:4px dashed DarkSlateGrey;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+">🍽️ SELECT OUR LIST MENU</h1>
+
+<table id="menuTable">
+<tr>
+  <th rowspan="3"><strong>DRINKS</strong></th>
+  <td><img src="img/coffee.jpg" style="width:100px; height:80px; vertical-align:middle; margin-right:10px;"> Coffee (RM4.20)</td>
+</tr>
+<tr>
+  <td><img src="img/tea.jpg" style="width:100px; height:80px; vertical-align:middle; margin-right:10px;"> Tea (RM2.50)</td>
+</tr>
+<tr>
+  <td><img src="img/orange.jpeg" style="width:100px; height:80px; vertical-align:middle; margin-right:10px;"> Orange Juice (RM5.10)</td>
+</tr>
+
+<tr>
+  <th rowspan="3"><strong>DESSERTS</strong></th>
+  <td><img src="img/dessert.jpg" style="width:100px; height:80px; vertical-align:middle; margin-right:10px;"> Cake (RM8.59)</td>
+</tr>
+<tr>
+  <td><img src="img/ice.jpg" style="width:100px; height:80px; vertical-align:middle; margin-right:10px;"> Ice Cream (RM6.39)</td>
+</tr>
+<tr>
+  <td><img src="img/cheese.jpg" style="width:100px; height:80px; vertical-align:middle; margin-right:10px;"> Cheesecake (RM9.49)</td>
+</tr>
+
+<tr>
+  <th rowspan="3"><strong>LIGHT MEALS</strong></th>
+  <td><img src="img/sand.jpeg" style="width:100px; height:80px; vertical-align:middle; margin-right:10px;"> Sandwich (RM7.00)</td>
+</tr>
+<tr>
+  <td><img src="img/salad.jpg" style="width:100px; height:80px; vertical-align:middle; margin-right:10px;"> Salad (RM5.00)</td>
+</tr>
+<tr>
+  <td><img src="img/fries.jpg" style="width:100px; height:80px; vertical-align:middle; margin-right:10px;"> Fries (RM6.00)</td>
+</tr>
+
+<tr>
+  <th rowspan="3"><strong>BREAKFAST SPECIAL</strong></th>
+  <td><img src="img/pan.jpg" style="width:100px; height:80px; vertical-align:middle; margin-right:10px;"> Pancakes (RM8.90)</td>
+</tr>
+<tr>
+  <td><img src="img/omelette.jpg" style="width:100px; height:80px; vertical-align:middle; margin-right:10px;"> Omelette (RM11.99)</td>
+</tr>
+<tr>
+  <td><img src="img/fullbreak.jpg" style="width:100px; height:80px; vertical-align:middle; margin-right:10px;"> Full Breakfast (RM18.99)</td>
+</tr>
+
+<tr>
+  <th rowspan="3"><strong>MAIN DISHES</strong></th>
+  <td><img src="img/pasta.jpg" style="width:100px; height:80px; vertical-align:middle; margin-right:10px;"> Pasta (RM20.00)</td>
+</tr>
+<tr>
+  <td><img src="img/chickenchop.jpg" style="width:100px; height:80px; vertical-align:middle; margin-right:10px;"> Chicken Chop (RM22.20)</td>
+</tr>
+<tr>
+  <td><img src="img/grilledfish.jpg" style="width:100px; height:80px; vertical-align:middle; margin-right:10px;"> Grilled Fish with Mashed Potatoes (RM24.89)</td>
+</tr>
+
+<tr>
+  <th rowspan="3"><strong>JAPANESE & KOREAN</strong></th>
+  <td><img src="img/dondon.jpg" style="width:100px; height:80px; vertical-align:middle; margin-right:10px;"> Teriyaki Chicken Don (RM26.29)</td>
+</tr>
+<tr>
+  <td><img src="img/kimchi.jpg" style="width:100px; height:80px; vertical-align:middle; margin-right:10px;"> Kimchi Fried Rice (RM18.79)</td>
+</tr>
+<tr>
+  <td><img src="img/friedkorea.jpg" style="width:100px; height:80px; vertical-align:middle; margin-right:10px;"> Korean Fried Chicken (RM21.29)</td>
+</tr>
+</table>
+
+<div style="text-align:center; margin-top: 30px;">
+  <img id="menuImage" src="" alt="Selected Menu Image" style="width:400px; display:none; border: 6px solid black; border-radius: 10px;">
+</div>
+
+    <p id="style1"> THANKS FOR LOOKING OUR MENU</p>
+</div>
+
+  <button type="button" onclick="myStyle()">Click me</button>
+
+<footer class="footer">
+  <p>Follow us on:</p>
+  <p>
+    <a href="https://www.facebook.com" target="_blank">Facebook</a> |
+    <a href="https://www.instagram.com" target="_blank">Instagram</a> |
+    <a href="https://www.twitter.com" target="_blank">Twitter</a>
+  </p>
+  <p style="margin-top: 10px;">&copy; 2025 Sip & Relax Cafe(Syaqiq)</p>
+</footer>
+
+     <script>
+          function myStyle() 
+          {
+               document.getElementById("style1").style.fontSize ="45px";
+               document.getElementById("style1").style.color = "Indigo";
+               document.getElementById("style1").style.backgroundColor ="BurlyWood";
+               document.getElementById("style1").style.fontFamily ="Copperplate";
+               document.getElementById("style1").style.border ="4px dashed Indigo"
+          }
+     </script>
+
+<script>
+  window.addEventListener("DOMContentLoaded", () => {
+    const splashVideo = document.getElementById("splash-video");
+    const splashScreen = document.getElementById("splash-screen");
+    const mainContent = document.getElementById("main-content");
+    const bgm = document.getElementById("bgm");
+
+    splashVideo.onended = () => {
+      alert("THANKS FOR SEEING OUR MENU.\nCHOOSE YOUR MENU NOW!!!");
+      bgm.play().catch(err => console.log("Autoplay blocked:", err));
+      splashScreen.style.display = "none";
+      mainContent.style.display = "block";
+    };
+  });
+</script>
+   
+</body>
+
+</html>

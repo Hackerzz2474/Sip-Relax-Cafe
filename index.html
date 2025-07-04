@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<title>Sip & Relax Cafe</title>
+	<link rel="icon" type="image/png" href="img/icon.png">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/bgm.js"></script>
+
+<style>
+  .wrapper {
+    animation: fadeIn 2s ease-in;
+  }
+
+  @keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+</style>
+
+
+</head>
+
+<body>
+
+<video autoplay muted loop playsinline id="bgVideo">
+  <source src="video/cafe.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+
+<div id="splash" onclick="start()">🍵 Welcome to Sip&Relax Cafe!!</div>
+
+<audio id="bgm" src="audio/Sunny.mp3" loop></audio>
+
+<div class="wrapper">
+	
+	<h1 class="title" style="font-family: Lucida Calligraphy, cursive;">SIP & RELAX CAFE</h1>
+
+	<nav class="navbar">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="menu.html">Menu</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</nav>
+
+	
+	<h2 class="cafe-tagline">The Best Cafe To Relax in The Neighborhood!</h2><br>
+
+	<div class="slideshow-container" style="text-align: center;">
+		<img id="slide" src="img/Sip&Relax.jpg" style="width: 50%; border-radius: 15px;">
+	</div>
+
+	<p class="cafe-welcome">
+  Welcome to Sip & Relax Cafe!<br>
+  We’re a cozy little spot where great coffee, homemade desserts, and warm smiles come together.<br><br>
+  Whether you're here to relax, catch up with friends, or get some work done, there's always a seat waiting for you.<br>
+  Come sip, relax, and stay awhile!
+  	</p>
+
+</div>
+
+<div class="testimonial-section">
+  <h2>💬 What Our Customers Say</h2>
+  <blockquote>“The best latte I’ve ever had – and such a cozy place!”<br>– Amsyar Lee</blockquote>
+  <blockquote>“Perfect spot to chill and write. The staff are always smiling!”<br>– Akmal Dj.</blockquote>
+  <blockquote>“Affordable, friendly, and the vibes? Chef’s kiss!”<br>– Nur Iman</blockquote>
+</div>
+
+<div class="event-section">
+  <h2>📅 Upcoming Events</h2>
+  <ul>
+    <li>🎤 <strong>Acoustic Night</strong> – Every Friday @ 8PM</li>
+    <li>☕ <strong>Latte Art Workshop</strong> – July 15th</li>
+    <li>🍰 <strong>Free Dessert Day</strong> – August 1st</li>
+    <li>🎉 <strong>Customer Appreciation Day</strong> – August 25th</li>
+  </ul>
+</div>
+
+
+
+<footer class="footer">
+  <p>Follow us on:</p>
+  <p>
+    <a href="https://www.facebook.com" target="_blank">Facebook</a> |
+    <a href="https://www.instagram.com" target="_blank">Instagram</a> |
+    <a href="https://www.twitter.com" target="_blank">Twitter</a>
+  </p>
+  <p style="margin-top: 10px;">&copy; 2025 Sip & Relax Cafe(Afiq Farhan)</p>
+</footer>
+
+<script>
+    alert("Welcome to Sip & Relax Cafe – Your happy place for sweet moments!");
+ </script>
+
+ <script>
+  let slideIndex = 0;
+  const images = [
+    "img/Sip&Relax.jpg",
+    "img/vibe.jpg",
+    "img/item.jpg"
+  ];
+  const slide = document.getElementById("slide");
+
+  setInterval(() => {
+    slideIndex = (slideIndex + 1) % images.length;
+    slide.src = images[slideIndex];
+  }, 5000);
+</script>
+
+
+</body>
+
+</html>
