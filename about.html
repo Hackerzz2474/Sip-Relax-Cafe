@@ -8,9 +8,6 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <style>
     body {
-      background-image: url(img/foto_1.jpg);
-      background-size: cover;
-      background-position: center;
       margin: 0;
       font-family: Garamond, serif;
       color: #fff;
@@ -123,6 +120,12 @@
   </style>
 </head>
 <body>
+
+<video autoplay muted loop playsinline id="bgVideo">
+  <source src="video/cafe.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
   <div class="wrapper">
     <h1 class="title">SIP & RELAX CAFE</h1>
 
@@ -135,7 +138,7 @@
       </ul>
     </nav>
   </div>
-  
+
 <div style="display: flex; align-items: center; justify-content: center; gap: 30px; flex-wrap: wrap; margin-top: 30px;">
   <p style="font-family: 'Garamond', serif; font-size: 70px; color: #3E2723; border: double 8px #A1887F; background-image: url(img/foto_2.jpg); padding: 20px 40px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
     <b>About Sip & Relax Cafe</b>
@@ -225,4 +228,5 @@
     }
   </script>
 </body>
+
 </html>
